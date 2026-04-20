@@ -1,8 +1,9 @@
-/* Custom Variables */
+/* --- MODERN MIDNIGHT PURPLE PORTFOLIO CSS --- */
+
 :root {
     --bg-black: #050505;
-    --midnight-purple: #1a0b2e;
-    --accent-purple: #7000ff;
+    --midnight-purple: #1a0b2e; /* Mély éjféli lila */
+    --accent-purple: #7000ff;   /* Élénk neon lila */
     --glass-bg: rgba(20, 10, 30, 0.4);
     --text-white: #f5f5f5;
     --text-gray: #a0a0b0;
@@ -25,7 +26,7 @@ body {
     line-height: 1.6;
 }
 
-/* Background Ambient Glow */
+/* Háttér hangulatvilágítás */
 body::before {
     content: '';
     position: fixed;
@@ -34,7 +35,7 @@ body::before {
     z-index: -2;
 }
 
-/* Navigation */
+/* Navigáció - Üveghatás */
 nav {
     display: flex;
     justify-content: space-between;
@@ -53,7 +54,7 @@ nav {
 .nav-links a { color: var(--text-white); text-decoration: none; margin-left: 2rem; transition: 0.3s; font-size: 0.9rem; }
 .nav-links a:hover { color: var(--accent-purple); }
 
-/* Hero Section */
+/* Hero Szekció */
 .hero {
     height: 85vh;
     display: flex;
@@ -72,7 +73,7 @@ nav {
 
 .hero p { color: var(--text-gray); max-width: 600px; margin: 0 auto 2.5rem; font-size: 1.1rem; }
 
-/* Buttons */
+/* Gombok */
 .btn-main {
     background: var(--accent-purple);
     padding: 16px 40px;
@@ -101,7 +102,7 @@ nav {
 
 .btn-sub:hover { background: rgba(112, 0, 255, 0.1); }
 
-/* --- Portfolio Showcase (Xtremeshell Inspired) --- */
+/* --- PORTFOLIO IMAGE (Fixed Xtremeshell Style) --- */
 .portfolio-showcase {
     padding: 2rem 10% 8rem;
     display: flex;
@@ -113,7 +114,7 @@ nav {
     width: 100%;
     max-width: 1100px;
     border-radius: 24px;
-    padding: 12px;
+    padding: 12px; /* A keret vastagsága */
     background: linear-gradient(180deg, rgba(112, 0, 255, 0.4), transparent);
     box-shadow: 0 20px 50px rgba(0,0,0,0.6);
 }
@@ -143,9 +144,10 @@ nav {
     font-weight: 600;
     white-space: nowrap;
     box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+    color: white;
 }
 
-/* Services Section */
+/* Szolgáltatások (Services) */
 .services { padding: 5rem 10%; text-align: center; }
 .title { font-size: 3rem; margin-bottom: 4rem; font-family: var(--font-head); }
 
@@ -182,7 +184,7 @@ nav {
     padding-top: 1.5rem;
 }
 
-/* Footer Contact Area */
+/* Footer / Kapcsolat */
 footer {
     padding: 6rem 10%;
     text-align: center;
@@ -198,10 +200,11 @@ footer {
 .contact-box h2 { font-size: 2.5rem; margin-bottom: 1rem; }
 .contact-box p { color: var(--text-gray); margin-bottom: 2rem; }
 
-/* Responsive Adjustments */
+/* Mobil nézet */
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hero h1 { font-size: 2.8rem; }
     .btn-sub { margin-left: 0; margin-top: 1rem; width: 100%; }
     .btn-main { width: 100%; }
+    .image-overlay { padding: 10px 20px; font-size: 0.8rem; }
 }
